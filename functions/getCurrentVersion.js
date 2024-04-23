@@ -1,5 +1,5 @@
 export default async function getCurrentVersion() {
-    const versionFileUrl = '../admin_library/version.json';
+    const versionFileUrl = '../alazar-admin-library/version.json';
 
     try {
         const response = await fetch(versionFileUrl);
