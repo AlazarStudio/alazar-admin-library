@@ -12,10 +12,11 @@ export default async function checkVersion() {
             updated: false,
         }
 
-        if (lastVersion !== currentVersion) {
+        if (lastVersion.version !== currentVersion.version) {
             message.updated = true;
             return message;
         }
+        return message;
     } catch (error) {
         console.error('Не удалось получить версию библиотеки:', error);
         return 'Ошибка при получении версии библиотеки';
