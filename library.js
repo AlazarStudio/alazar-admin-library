@@ -1,9 +1,11 @@
-import { test1 } from "./functions/test1.js";
-import { test2 } from "./functions/test2.js";
+import checkVersion from "./functions/checkVersion.js";
+import getCurrentVersion from "./functions/getCurrentVersion.js";
+import getAllFilesFromRepo from "./functions/getAllFilesFromRepo.js";
 
 let library = {
-    test1,
-    test2
+    checkVersion,
+    getCurrentVersion,
+    getAllFilesFromRepo
 };
 
 export default library;
