@@ -9,5 +9,3 @@ let library = {
 };
 
 export default library;
-
-//test
